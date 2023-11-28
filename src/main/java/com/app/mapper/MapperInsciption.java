@@ -1,7 +1,11 @@
 package com.app.mapper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.stereotype.Component;
 
+import com.app.Entities.Concours;
 import com.app.Entities.Inscription;
 import com.app.dto.DtoRequestInscription;
 import com.app.dto.DtoResponseInscription;
@@ -22,7 +26,8 @@ public class MapperInsciption {
 	public Inscription  requesttoInscription(DtoRequestInscription dtoRequestInscription)
 	{
 		Inscription jh = new Inscription();
-		
+		Concours cc=new Concours();
+		jh.setConcour(cc);
 		jh.getConcour().setId(dtoRequestInscription.getIdConcour());
 		jh.setIdEtudiant(dtoRequestInscription.getIdEtudiant());
 		return jh;
