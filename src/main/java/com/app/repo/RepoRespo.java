@@ -3,8 +3,10 @@ package com.app.repo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.app.Entities.Concours;
-@Repository
+import com.app.Entities.RespConcours;
 
-public interface RepoConcours  extends JpaRepository<Concours, Integer>{
+
+@Repository
+public interface RepoRespo extends JpaRepository<RespConcours, Integer> {
+
 }

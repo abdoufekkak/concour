@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.app.exception.Exception500;
 import com.app.Entities.Concours;
 import com.app.dto.DTOResponseConcours;
 import com.app.dto.DtoRequestConcours;
